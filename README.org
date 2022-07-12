@@ -3,14 +3,12 @@
 This is just a sample project for seeing how Doxygen works.
 
 * Steps
-
 ** Setup Doxygen configuration
 #+begin_src shell
 doxygen -g <config file (defaults to Doxyfile)
 #+end_src
 
 ** Fine-tune Configuration
-
 1. Set ~PROJECT_NAME~ to the project name.
 2. Set ~INPUT~ to the subdirectories containing documented files.
    If left empty Doxygen will just scan the current directory; however, it's better to be explicit.
