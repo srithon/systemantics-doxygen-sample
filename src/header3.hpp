@@ -1,10 +1,6 @@
 #if !defined(HEADER3)
 #define HEADER3
 
-/**
- * @namespace systemantics
- * @brief This namespace contains some information.
- */
 namespace systemantics {
 /**
  * @class OurClass
