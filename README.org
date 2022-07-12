@@ -8,3 +8,7 @@ This is just a sample project for seeing how Doxygen works.
 #+begin_src shell
 doxygen -g <config file (defaults to Doxyfile)
 #+end_src
+
+** Fine-tune Configuration
+
+1. Set ~PROJECT_NAME~ to the project name.
