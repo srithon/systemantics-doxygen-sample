@@ -20,3 +20,27 @@ doxygen -g <config file (defaults to Doxyfile)
    This means that subdirectories /within/ those specified in ~INPUT~ will be searched.
    I feel that this is a reasonable default to have.
    If a situation arises where you need to exclude certain subdirectories, you can use the ~EXCLUDE~ key to do so.
+4. Create comments in code.
+   Note that in order for "globally"-scoped entities to show up in the Doxygen output, the file or namespace containing the entity must be documented.
+   This can be done with a comment like the following:
+   #+begin_src cpp
+   /**
+    * @file header1.hpp
+    * @brief This file declares prototypes for some functions.
+    */
+   #+end_src
+
+   Otherwise, Doxygen will only render the entity if the ~EXTRACT_ALL~ key is equal to ~YES~; this tells it to extract subentities from entities that are not explicitly documented on their own.
+
+   Function comments should resemble the following.
+   My opinion is that these should only appear in header files, but this may be up for discourse.
+   #+begin_src cpp
+   /**
+    * @brief Yields the length of a string subtracted by an integer
+    *
+    * @param some_string This string represents someone's name.
+    * @param some_integer This integer represents someone's age.
+    * @return The length of `some_string` subtracted by `some_integer`
+    */
+   int some_int_function(std::string some_string, int some_integer);
+   #+end_src
