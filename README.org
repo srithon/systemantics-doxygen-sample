@@ -1,0 +1,10 @@
+#+TITLE: Notes
+
+This is just a sample project for seeing how Doxygen works.
+
+* Steps
+
+** Setup Doxygen configuration
+#+begin_src shell
+doxygen -g <config file (defaults to Doxyfile)
+#+end_src
