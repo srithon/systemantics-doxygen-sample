@@ -16,3 +16,7 @@ doxygen -g <config file (defaults to Doxyfile)
    If left empty Doxygen will just scan the current directory; however, it's better to be explicit.
    If there is a directory containing dependencies, you may want to include that directory if it is documented.
    Even if the dependencies are not documented, Doxygen may be able to piece together object relationships to give you something to work with.
+3. Set ~RECURSIVE~ to ~YES~.
+   This means that subdirectories /within/ those specified in ~INPUT~ will be searched.
+   I feel that this is a reasonable default to have.
+   If a situation arises where you need to exclude certain subdirectories, you can use the ~EXCLUDE~ key to do so.
