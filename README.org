@@ -45,3 +45,14 @@ My opinion is that these should only appear in header files, but this may be up 
  */
 int some_int_function(std::string some_string, int some_integer);
 #+end_src
+
+Class comments should resemble the following:
+#+begin_src cpp
+/**
+ * @class MyClass
+ * @brief This class represents a model in the MVC framework.
+ */
+class MyClass {
+   ...
+}
+#+end_src
