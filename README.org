@@ -12,3 +12,7 @@ doxygen -g <config file (defaults to Doxyfile)
 ** Fine-tune Configuration
 
 1. Set ~PROJECT_NAME~ to the project name.
+2. Set ~INPUT~ to the subdirectories containing documented files.
+   If left empty Doxygen will just scan the current directory; however, it's better to be explicit.
+   If there is a directory containing dependencies, you may want to include that directory if it is documented.
+   Even if the dependencies are not documented, Doxygen may be able to piece together object relationships to give you something to work with.
