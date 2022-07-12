@@ -56,3 +56,14 @@ class MyClass {
    ...
 }
 #+end_src
+
+Namespace comments should resemble the following:
+#+begin_src cpp
+/**
+ * @namespace systemantics
+ * @brief This namespace contains some information.
+ */
+namespace systemantics {
+   ...
+}
+#+end_src
